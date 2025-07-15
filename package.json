@@ -17,7 +17,8 @@
     "url": "https://github.com/pratikshsaini/E-Commerce-App/issues"
   },
   "homepage": "https://github.com/pratikshsaini/E-Commerce-App#readme",
-  "dependencies": {
+  "keywords": [],
+  "devDependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11"
   }
