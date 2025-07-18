@@ -137,22 +137,55 @@
 
     <main>
       <div
-        class="item-detail-section w-fill h-[120rem] flex justify-center items-center"
+        class="item-detail-section w-fill h-auto flex justify-center items-center p-20"
       >
         <div class="container w-[90%] h-full">
-          <div class="top-area w-full h-[35rem] flex">
+          <div
+            class="top-area w-full h-[35rem] flex p-8 border border-gray-300 rounded"
+          >
             <div class="top-left w-1/2 h=full">
               <div class="product-image w-full h-full">
-                <div class="main-image w-full h-[80%] bg-yellow-200"></div>
-                <div class="small-image w-full h-[20%] bg-violet-200"></div>
+                <div
+                  class="main-image w-full h-[80%] border border-gray-300 rounded"
+                >
+                  <img src="images/drone-main.png" alt="" />
+                </div>
+
+                <div class="small-image w-full h-auto flex gap-2.5 mt-3.5">
+                  <div
+                    class="small-image1 w-1/5 h-20 border border-gray-300 rounded p-1"
+                  >
+                    <img src="images/drone-main.png" alt="" />
+                  </div>
+                  <div
+                    class="small-image2 w-1/5 h-20 border border-gray-300 rounded"
+                  >
+                    <img src="images/drone-small1.png" alt="" />
+                  </div>
+                  <div
+                    class="small-image3 w-1/5 h-20 border border-gray-300 rounded"
+                  >
+                    <img src="images/drone-small2.png" alt="" />
+                  </div>
+                  <div
+                    class="small-image4 w-1/5 h-20 border border-gray-300 rounded"
+                  >
+                    <img src="images/drone-small3.png" alt="" />
+                  </div>
+                  <div
+                    class="small-image5 w-1/5 h-20 border border-gray-300 rounded"
+                  >
+                    <img src="images/drone-small4.png" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="top-right w-1/2 h=full bg-red-400">
+            <div class="top-right w-1/2 h=full">
               <div
-                class="product-info w-full h-4/5 flex flex-col gap-10.5 pr-3 pl-3"
+                class="product-info w-full h-4/5 flex flex-col gap-7 pr-3 pl-3"
               >
                 <h2 class="text-2xl">GoPro</h2>
-                <p>Action Camera</p>
+                <p class="text-sm text-gray-500">Action Cameras</p>
                 <h3 class="text-2xl">
                   $850 <span><strike>$950</strike></span>
                 </h3>
@@ -173,7 +206,11 @@
                   </div>
                   <div class="choose-battery flex flex-col w-1/3">
                     <label for="">Battery Capacity</label>
-                    <select class="border" name="" id="">
+                    <select
+                      class="h-10 border border-gray-300 rounded"
+                      name=""
+                      id=""
+                    >
                       <option value="">5000 mAh</option>
                       <option value="">6000 mAh</option>
                       <option value="">7000 mAh</option>
@@ -181,7 +218,11 @@
                   </div>
                   <div class="choose-quantity flex flex-col w-1/3">
                     <label for="">Quantity</label>
-                    <select class="border" name="" id="">
+                    <select
+                      class="border border-gray-300 rounded h-10"
+                      name=""
+                      id=""
+                    >
                       <option value="">1</option>
                       <option value="">2</option>
                       <option value="">3</option>
@@ -191,13 +232,17 @@
                 <div
                   class="product-bottom-row2 flex justify-around items-center gap-10 pr-2.5 pl-2.5"
                 >
-                  <button class="bg-blue-500 w-1/3 h-11 rounded">
-                    Add to Card
+                  <button class="bg-blue-500 w-1/3 h-11 rounded text-white">
+                    Add to Cart
                   </button>
-                  <button class="bg-blue-500 w-1/3 h-11 rounded">
+                  <button
+                    class="border border-gray-300 w-1/3 h-11 rounded text-gray-700"
+                  >
                     Compare
                   </button>
-                  <button class="bg-blue-500 w-1/3 h-11 rounded">
+                  <button
+                    class="w-1/3 h-11 border border-gray-300 rounded text-gray-700 flex gap-1 justify-center items-center"
+                  >
                     <i class="fa-regular fa-heart"></i>To Wishlist
                   </button>
                 </div>
@@ -205,8 +250,12 @@
             </div>
           </div>
 
-          <div class="specs-section h-[28rem] flex bg-pink-300">
-            <div class="specs-left w-1/2 pl-3 pr-3 flex flex-col justify-evenly">
+          <div
+            class="specs-section h-[28rem] flex p-8 border border-gray-300 rounded mt-8"
+          >
+            <div
+              class="specs-left w-1/2 pl-3 pr-3 flex flex-col justify-between"
+            >
               <div class="details">
                 <h2 class="text-lg font-semibold">Details</h2>
                 <p>
@@ -230,7 +279,9 @@
                 </ul>
               </div>
             </div>
-            <div class="specs-right w-1/2 pl-3 pr-3 flex flex-col justify-evenly">
+            <div
+              class="specs-right w-1/2 pl-3 pr-3 flex flex-col justify-between"
+            >
               <div class="specifications">
                 <h2 class="text-lg font-semibold">Specifications</h2>
                 <p>
@@ -246,12 +297,104 @@
               <div class="shipping-options:">
                 <h2 class="text-lg font-semibold">Shipping Options:</h2>
                 <ul>
-                  <li>Capture 4K30 Video and 12MP Photos</li>
-                  <li>Game-Style Controller with Touchscreen</li>
-                  <li>View Live Camera Feed</li>
-                  <li>Full Control of HERO6 Black</li>
-                  <li>Use App for Dedicated Camera Operation</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="rating-reviews w-full h-[45rem] flex gap-7 mt-8">
+            <div
+              class="rating w-1/3 h-[22rem] border border-gray-300 p-8 flex flex-col rounded justify-between"
+            >
+              <h4 class="text-[1.5rem]">4.5 (Overall)</h4>
+              <span
+                >5 star - 38
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+              </span>
+              <span
+                >4 star - 10
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+              </span>
+              <span
+                >3 star - 3
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+              </span>
+              <span
+                >2 star - 1
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+              </span>
+              <span
+                >1 star - 0
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <i class="fa-solid fa-star text-amber-400"></i>
+              </span>
+              <button class="w-full h-12 bg-orange-500 text-white rounded">
+                Leave a Review
+              </button>
+            </div>
+            <div
+              class="reviews p-8 flex flex-col justify-between border border-gray-300 rounded"
+            >
+              <h4>Latest Reviews</h4>
+              <div class="reviewbox1 flex h-40 border border-gray-300 rounded">
+                <img class="[10%]" src="" alt="photo" />
+                <div class="review1 w-full flex flex-col">
+                  <h4 class="flex flex-col">
+                    Awesome quality for the price <span>Jacob</span>
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quod, corrupti. Ducimus, velit.
+                  </p>
+                </div>
+              </div>
+              <div class="reviewbox2 flex h-40 border border-gray-300 rounded">
+                <img class="[10%]" src="" alt="photo" />
+                <div class="review2 w-full flex flex-col">
+                  <h4 class="flex flex-col">
+                    Awesome quality for the price <span>Ferra</span>
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quod, corrupti. Ducimus, velit.
+                  </p>
+                </div>
+              </div>
+              <div class="reviewbox3 flex h-40 border border-gray-300 rounded">
+                <img class="[10%]" src="" alt="photo" />
+                <div class="review3 w-full flex flex-col">
+                  <h4 class="flex flex-col">
+                    Awesome quality for the price <span>Kratos</span>
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quod, corrupti. Ducimus, velit.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
