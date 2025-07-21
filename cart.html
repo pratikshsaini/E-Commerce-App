@@ -129,7 +129,7 @@
     </nav>
 
     <main>
-      <div class="maincart flex justify-center">
+      <div class="maincart flex justify-center pt-20 pb-20">
         <div class="container w-[90%]">
           <div
             class="cart-list-title w-full h-14 border border-gray-300 rounded p-5 flex justify-between items-center gap-2.5">
@@ -137,6 +137,72 @@
             <div class="quantity w-1/5">Quantity</div>
             <div class="subtotal w-1/5">Subtotal</div>
             <div class="remove w-1/5">Remove</div>
+          </div>
+
+          <div
+            class="cart-product1 w-full h-32 flex justify-between items-center gap-2.5 border border-gray-300 pt-7 pb-7 pr-5 pl-5">
+            <div class="product-name1 w-2/5">Product Name</div>
+            <div class="choose-quantity1 flex flex-col w-1/5">
+              <select class="border border-gray-300 rounded h-10" name="" id="">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+            </div>
+            <div class="subtotal1 w-1/5">Subtotal</div>
+            <div class="remove1 w-1/5">Remove</div>
+          </div>
+          <div
+            class="cart-product2 w-full h-32 flex justify-between items-center gap-2.5 border border-gray-300 pt-7 pb-7 pr-5 pl-5">
+            <div class="product-name2 w-2/5">Product Name</div>
+            <div class="choose-quantity2 flex flex-col w-1/5">
+              <select class="border border-gray-300 rounded h-10" name="" id="">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+            </div>
+            <div class="subtotal2 w-1/5">Subtotal</div>
+            <div class="remove2 w-1/5">Remove</div>
+          </div>
+          <div
+            class="cart-product3 w-full h-32 flex justify-between items-center gap-2.5 border border-gray-300 pt-7 pb-7 pr-5 pl-5">
+            <div class="product-name3 w-2/5">Product Name</div>
+            <div class="choose-quantity3 flex flex-col w-1/5">
+              <select class="border border-gray-300 rounded h-10" name="" id="">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+            </div>
+            <div class="subtotal3 w-1/5">Subtotal</div>
+            <div class="remove3 w-1/5">Remove</div>
+          </div>
+
+          <div class="total-amount w-full h-96 flex mt-10">
+            <div class="coupon w-2/3 h-full">
+              <div class="w-7/10 h-32 p-10 flex justify-center items-center gap-4 border border-gray-300 rounded">
+                <input class=" border border-gray-300 rounded h-full w-72" type="text" placeholder="Enter Your Coupon">
+                <button class="w-40 h-11 bg-blue-500 text-white rounded">
+                Apply Coupon
+              </button>
+              </div>
+            </div>
+
+            <div class="bill w-1/3 h-full p-10 flex flex-col gap-2.5 border border-gray-300 rounded">
+              <ul class="flex flex-col gap-2.5">
+                <li class="flex justify-between">Cart Subtotal <span>$2500.00</span></li>
+                <li class="flex justify-between">Shipping <span>Free</span></li>
+                <li class="flex justify-between">You Save <span>$500.00</span></li>
+                <li class="last flex justify-between">You Pay <span>$2000.00</span></li>
+              </ul>
+              <button class="w-full h-12 bg-blue-500 text-white rounded mt-7.5">
+                Checkout
+              </button>
+              <button class="w-full h-12 bg-black text-white rounded">
+                Continue Shopping
+              </button>
+            </div>
           </div>
         </div>
       </div>
