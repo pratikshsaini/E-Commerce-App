@@ -70,7 +70,7 @@ function loadProduct(productlist) {
   productLoader.innerHTML = "";
   productlist.forEach((product) => {
     const productCard = `
-    <div class="product-grid-1 h-[30rem] p-2 border">
+    <div class="product-grid-1 h-[30rem] p-2 border rounded">
      <img class="w-full h-3/5" src="${product.image}" alt="" />
      <div class="product-info h-2/5 flex flex-col justify-center">
       <span>${product.category}</span>
