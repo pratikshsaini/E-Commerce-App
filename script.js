@@ -71,13 +71,21 @@ function loadProduct(productlist) {
   productlist.forEach((product) => {
     const productCard = `
     <div class="product-grid-1 h-[30rem] p-2 border rounded">
-     <img class="w-full h-3/5" src="${product.image}" alt="" />
-     <div class="product-info h-2/5 flex flex-col justify-center">
-      <span>${product.category}</span>
-      <a href="">${product.title}</a>
-      <span>${product.price}</span>
-     </div>
-    </div>
+        <img class="w-full h-3/5" src="${product.image}" alt="" />
+        <div class="product-info h-2/5 flex flex-col justify-evenly">
+          <span>${product.category}</span>
+          <a href="#">${product.title}</a>
+          <span>${product.price}</span>
+          <div class="buttons flex justify-between">
+            <button class="w-28 h-11 bg-blue-500 text-white rounded">
+              Add to Cart
+            </button>
+            <button class="w-28 h-11 bg-yellow-500 text-black rounded">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
     `;
     productLoader.innerHTML += productCard;
   });
