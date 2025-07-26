@@ -7,21 +7,20 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-700: oklch(50.5% 0.213 27.518);
     --color-orange-500: oklch(70.5% 0.213 47.604);
     --color-orange-700: oklch(55.3% 0.195 38.402);
-    --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
-    --color-green-300: oklch(87.1% 0.15 154.449);
     --color-green-700: oklch(52.7% 0.154 150.069);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-blue-950: oklch(28.2% 0.091 267.935);
-    --color-pink-300: oklch(82.3% 0.12 346.018);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
+    --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
@@ -41,6 +40,8 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -235,6 +236,15 @@
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-15 {
+    margin-bottom: calc(var(--spacing) * 15);
+  }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
   }
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
@@ -464,6 +474,9 @@
   .justify-evenly {
     justify-content: space-evenly;
   }
+  .justify-start {
+    justify-content: flex-start;
+  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
@@ -500,15 +513,42 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
   .rounded {
     border-radius: 0.25rem;
   }
   .rounded-\[50\%\] {
     border-radius: 50%;
   }
+  .rounded-l {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+  .rounded-l-2xl {
+    border-top-left-radius: var(--radius-2xl);
+    border-bottom-left-radius: var(--radius-2xl);
+  }
+  .rounded-l-xl {
+    border-top-left-radius: var(--radius-xl);
+    border-bottom-left-radius: var(--radius-xl);
+  }
+  .rounded-r {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+  .rounded-r-2xl {
+    border-top-right-radius: var(--radius-2xl);
+    border-bottom-right-radius: var(--radius-2xl);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
   }
   .border-t-2 {
     border-top-style: var(--tw-border-style);
@@ -518,9 +558,23 @@
     border-right-style: var(--tw-border-style);
     border-right-width: 1px;
   }
+  .border-r-2 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 2px;
+  }
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
+  }
+  .border-l-2 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 2px;
+  }
+  .border-gray-100 {
+    border-color: var(--color-gray-100);
+  }
+  .border-gray-200 {
+    border-color: var(--color-gray-200);
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
@@ -545,6 +599,15 @@
   }
   .bg-blue-950 {
     background-color: var(--color-blue-950);
+  }
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
+  }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
   }
   .bg-green-700 {
     background-color: var(--color-green-700);
@@ -573,14 +636,71 @@
   .bg-\[url\(\'images\/big-img\.png\'\)\] {
     background-image: url('images/big-img.png');
   }
+  .bg-\[url\(\'images\/l-img\.png\'\)\] {
+    background-image: url('images/l-img.png');
+  }
+  .bg-\[url\(\'images\/laptop-img\.png\'\)\] {
+    background-image: url('images/laptop-img.png');
+  }
+  .bg-\[url\(\'images\/laptop\.png\'\)\] {
+    background-image: url('images/laptop.png');
+  }
+  .bg-\[url\(\'images\/laptop\.webp\'\)\] {
+    background-image: url('images/laptop.webp');
+  }
+  .bg-\[url\(\'images\/laptops-img\.png\'\)\] {
+    background-image: url('images/laptops-img.png');
+  }
+  .bg-\[url\(\'images\/laptops\.png\'\)\] {
+    background-image: url('images/laptops.png');
+  }
   .bg-\[url\(\'images\/small-img1\.png\'\)\] {
     background-image: url('images/small-img1.png');
+  }
+  .bg-auto {
+    background-size: auto;
   }
   .bg-cover {
     background-size: cover;
   }
+  .bg-\[40\%\] {
+    background-position: 40%;
+  }
   .bg-center {
     background-position: center;
+  }
+  .bg-position-\[10px20px\] {
+    background-position: 10px20px;
+  }
+  .bg-position-\[10px_-0px\] {
+    background-position: 10px -0px;
+  }
+  .bg-position-\[10px_-40px\] {
+    background-position: 10px -40px;
+  }
+  .bg-position-\[10px_-60px\] {
+    background-position: 10px -60px;
+  }
+  .bg-position-\[10px_-80px\] {
+    background-position: 10px -80px;
+  }
+  .bg-position-\[10px_0px\] {
+    background-position: 10px 0px;
+  }
+  .bg-position-\[10px_20px\] {
+    background-position: 10px 20px;
+  }
+  .bg-position-\[20px_0px\] {
+    background-position: 20px 0px;
+  }
+  .bg-position-\[20px_20px\] {
+    background-position: 20px 20px;
+  }
+  .bg-position-\[20px_40px\] {
+    background-position: 20px 40px;
+  }
+  .bg-top {
+    background-position: top;
   }
   .p-1 {
     padding: calc(var(--spacing) * 1);
@@ -735,6 +855,21 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .hover\:font-semibold {
+    &:hover {
+      @media (hover: hover) {
+        --tw-font-weight: var(--font-weight-semibold);
+        font-weight: var(--font-weight-semibold);
+      }
+    }
+  }
+  .hover\:text-blue-500 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-blue-500);
+      }
+    }
   }
   .focus\:outline-none {
     &:focus {
