@@ -120,7 +120,7 @@ function displayCartItem() {
   cartitems.forEach((items) => {
     cartContainer.innerHTML += `
   <div class="cart-product1 w-full h-32 flex justify-between items-center gap-2.5 border border-gray-300 pt-7 pb-7 pr-5 pl-5">
-    <div class="product-name1 w-2/5">${item.name}</div>
+    <div class="product-name1 w-2/5">${items.name}</div>
     <div class="choose-quantity1 flex flex-col w-1/5">
     <select class="border border-gray-300 rounded h-10" name="" id="">
                 <option value="">1</option>
@@ -128,7 +128,7 @@ function displayCartItem() {
                 <option value="">3</option>
               </select>
             </div>
-            <div class="subtotal1 w-1/5">${item.price}</div>
+            <div class="subtotal1 w-1/5">${items.price}</div>
             <div class="remove1 w-1/5">Remove</div>
           </div>
   `;
