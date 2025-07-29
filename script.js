@@ -1,3 +1,29 @@
+const dummyUser = {
+  username: "admin",
+  password: "1234",
+};
+
+const loginForm = document.getElementById("login-form");
+const messagePara = document.getElementById("login-message");
+
+loginForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const enteredUsername = document.getElementById("username").value.trim();
+  const enteredPassword = document.getElementById("password").value.trim();
+
+  if (
+    enteredUsername === dummyUser.username &&
+    enteredPassword === dummyUser.password
+  ) {
+    messagePara.textContent = `🎉 Welcome, ${enteredUsername}!`;
+    messagePara.style.color = "green";
+  } else {
+    messagePara.textContent = "❌ Invalid username or password.";
+    messagePara.style.color = "red";
+  }
+});
+
 const product = [
   {
     id: 1,
