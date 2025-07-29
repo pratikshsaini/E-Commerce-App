@@ -12,20 +12,37 @@
   <body>
     <div
       class="loginSection w-screen h-screen flex justify-center items-center bg-blue-500">
-      <div class="loginBox w-1/3 h-4/5 border rounded p-20 flex flex-col gap-10 bg-white">
+      <div
+        class="loginBox w-1/3 h-4/5 border rounded p-20 flex flex-col gap-10 bg-white">
         <h2 class="font-bold text-3xl text-center">Login</h2>
         <div class="username border-b">
-          <label for="">Username</label><br>
-          <input type="text" placeholder="Type your username" />
+          <label for="">Username</label>
+          <br />
+          <div class="input-name flex justify-center items-center gap-3">
+            <i class="fa-solid fa-user fa-sm"></i>
+            <input
+              type="text"
+              placeholder="Type your username"
+              class="w-full h-10" />
+          </div>
         </div>
         <div class="password border-b">
-          <label for="">Password</label><br>
-          <input type="password" placeholder="Type your password" />
+          <label for="">Password</label>
+          <br />
+          <div class="input-password flex justify-center items-center gap-3">
+            <i class="fa-solid fa-lock fa-sm"></i>
+            <input
+              type="password"
+              placeholder="Type your password"
+              class="w-full h-10" />
+          </div>
         </div>
         <div class="forgotPass flex justify-end">
-            <span class="text-gray-700">Forgot password?</span>
+          <span class="text-gray-700">Forgot password?</span>
         </div>
-        <button class="rounded-2xl w-full h-12 border bg-blue-500 text-white">Login</button>
+        <button class="rounded-2xl w-full h-12 border bg-blue-500 text-white">
+          Login
+        </button>
       </div>
     </div>
   </body>
