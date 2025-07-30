@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoltCart - Home</title>
+    <link rel="stylesheet" href="/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar flex justify-center">
+        <div class="container w-[90%] h-24 flex justify-between items-center">
+          <div class="nav-logo w-40 h-full">
+            <img class="h-full" src="/images/2.png" alt="LOGO" />
+          </div>
+
+          <div class="nav-search w-[545px] flex">
+            <div class="relative border-2 border-gray-200 rounded-l">
+              <button
+                class="w-28 flex items-center px-4 py-2 font-medium">
+                All
+                <svg
+                  class="ml-1 w-3 h-3 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+            </div>
+
+            <input
+              type="text"
+              placeholder="Search"
+              class="h-11 w-96 px-4 py-2 text-gray-700 focus:outline-none border-2 border-gray-200 rounded-r" />
+
+            <button
+              class="px-4 bg-blue-600 text-white flex items-center justify-center rounded">
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="nav-wish-cart w-24 gap-2.5 flex">
+            <div
+              class="div rounded-[50%] border w-10 h-10 flex justify-center items-center hover:bg-blue-500 hover:text-white">
+              <i class="fa-solid fa-heart fa-lg"></i>
+            </div>
+            <a href="cart.html">
+              <div
+                class="div rounded-[50%] border w-10 h-10 flex justify-center items-center hover:bg-blue-500 hover:text-white">
+                <i class="fa-solid fa-cart-shopping fa-lg"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="nav-pages-links w-full h-[60px] border-2 border-gray-200 flex items-center justify-center">
+        <div class="container w-[90%] h-full flex justify-between items-center">
+          <div
+            class="nav-link-categories w-60 h-full flex justify-center items-center gap-5 border-r border-gray-200">
+            <i class="fa-solid fa-bars fa-xl"></i>
+            <span class="font-medium">All Categories</span>
+          </div>
+
+          <div class="nav-pages w-xl h-16 flex items-center">
+            <ul class="flex w-full justify-evenly">
+              <li class="flex items-center gap-1">
+                <a href="" class="font-medium"><span>Home</span></a>
+                <!-- <i class="fa-solid fa-caret-down"></i> -->
+              </li>
+              <li class="flex items-center gap-1">
+                <a href="product-grid.html" class="font-medium">
+                  <span>Shop</span>
+                  <!-- <i class="fa-solid fa-caret-down"></i> -->
+                </a>
+              </li>
+              <li class="flex items-center gap-1">
+                <a href="" class="font-medium"><span>Pages</span></a>
+                <i class="fa-solid fa-caret-down"></i>
+              </li>
+              <li class="flex items-center gap-1">
+                 <a href="" class="font-medium"><span>About</span></a>
+                <!-- <i class="fa-solid fa-caret-down"></i> -->
+              </li>
+              <li class="flex items-center gap-1">
+                 <a href="" class="font-medium"><span>Contact</span></a>
+                <!-- <i class="fa-solid fa-caret-down"></i> -->
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="nav-media-links w-60 h-full flex justify-evenly items-center">
+            <h5 class="font-medium">Follow Us:</h5>
+            <div
+              class="div rounded-[50%] border w-10 h-10 flex justify-center items-center hover:bg-blue-500 hover:text-white">
+              <i class="fa-brands fa-facebook-f fa-lg"></i>
+            </div>
+            <div
+              class="div rounded-[50%] border w-10 h-10 flex justify-center items-center hover:bg-blue-500 hover:text-white">
+              <i class="fa-brands fa-twitter fa-lg"></i>
+            </div>
+            <div
+              class="div rounded-[50%] border w-10 h-10 flex justify-center items-center hover:bg-blue-500 hover:text-white">
+              <i class="fa-brands fa-square-instagram fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="hero w-full h-[35rem] flex justify-center items-center mt-3">
+        <div class="container w-[90%] h-full">
+          <div class="hero-images w-full h-full flex gap-4">
+            <div
+              class="hero-big-img w-2/3 h-full bg-[url('images/laptop.webp')] bg-center bg-cover">
+            </div>
+
+            <div class="hero-small-img w-1/3 flex flex-col gap-4">
+              <div
+                class="small-img1 w-full h-1/2 bg-[url('images/small-img1.png')] bg-cover flex item-center pt-20 pb-20 pl-10">
+                <div class="details w-60 h-36">
+                  <span>New Line required</span>
+                  <h2>iPhone 12 Pro Max</h2>
+                  <h3>$259.00</h3>
+                </div>
+              </div>
+
+              <div
+                class="small-img2 w-full h-1/2 bg-blue-950 p-10 flex flex-col gap-3.5 text-white">
+                <h2>Weekly Sale!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="w-28 h-10 bg-white text-blue-600 rounded">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="featured-categories flex justify-center items-center pt-20 pb-20">
+        <div class="container w-[90%]">
+          <div
+            class="title w-full h-28 flex flex-col justify-evenly items-center mb-10">
+            <h2 class="font-bold text-3xl">Featured Categories</h2>
+            <p class="text-center w-1/3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et ex
+              saepe suscipit illum consequuntur possimus.
+            </p>
+          </div>
+          <div
+            class="featured-products grid grid-cols-3 w-full gap-2.5 p-2.5 h-[35rem]">
+            <div
+              class="product1 border-2 border-gray-200 flex justify-center items-center">
+              <div>
+                <h3 class="font-semibold">Audio</h3>
+                <ul>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Smart Television</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">QLED TV</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Audio</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Headphones</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">View All</a></li>
+                </ul>
+              </div>
+
+              <img src="images/product_6.png" alt="" />
+            </div>
+            <div
+              class="product2 border-2 border-gray-200 flex justify-center items-center">
+              <div>
+                <h3 class="font-semibold">Desktop & Laptop</h3>
+                <ul>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Smart Television</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">QLED TV</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Audio</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Headphones</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">View All</a></li>
+                </ul>
+              </div>
+              <img src="images/product_5.png" alt="" />
+            </div>
+            <div
+              class="product3 border-2 border-gray-200 flex justify-center items-center">
+              <div>
+                <h3 class="font-semibold">CCTV Camera</h3>
+                <ul>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Smart Television</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">QLED TV</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Audio</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Headphones</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">View All</a></li>
+                </ul>
+              </div>
+              <img src="images/product_1.png" alt="" />
+            </div>
+            <div
+              class="product4 border-2 border-gray-200 flex justify-center items-center">
+              <div>
+                <h3 class="font-semibold">DSLR Camera</h3>
+                <ul>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Smart Television</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">QLED TV</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Audio</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Headphones</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">View All</a></li>
+                </ul>
+              </div>
+              <img src="images/product_1.png" alt="" />
+            </div>
+            <div
+              class="product5 border-2 border-gray-200 flex justify-center items-center">
+              <div>
+                <h3 class="font-semibold">Smart Phones</h3>
+                <ul>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Smart Television</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">QLED TV</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Audio</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Headphones</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">View All</a></li>
+                </ul>
+              </div>
+              <img src="images/product_3.png" alt="" />
+            </div>
+            <div
+              class="product6 border-2 border-gray-200 flex justify-center items-center">
+              <div>
+                <h3 class="font-semibold">Gaming Console</h3>
+                <ul>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Smart Television</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">QLED TV</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Audio</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">Headphones</a></li>
+                  <li><a href="" class="hover:text-blue-500 hover:font-semibold">View All</a></li>
+                </ul>
+              </div>
+              <img src="images/product_2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="trending-products w-full h-[65rem] flex justify-center items-center pt-20 pb-20 bg-gray-50">
+        <div class="container w-[90%]">
+          <div
+            class="title w-full h-28 flex flex-col justify-evenly items-center mb-10">
+            <h2 class="font-bold text-3xl">Trending Products</h2>
+            <p class="text-center w-1/3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et ex
+              saepe suscipit illum consequuntur possimus.
+            </p>
+          </div>
+          <div
+            class="trending-products grid grid-cols-4 w-full gap-7 p-2.5 h-full">
+            <div
+              class="trending-product1 border border-gray-300 rounded shadow-lg flex flex-col justify-center items-center bg-white p-2">
+              <div class="trendingproduct1img">
+                <img src="images/watch.png" alt="" />
+              </div>
+              <div class="trendingproduct1info flex flex-col justify-center">
+                <span>Watches</span>
+                <a href="">Xiaomi Mi Band 5</a>
+                <span>$199.00</span>
+              </div>
+            </div>
+
+            <div
+              class="trending-product2 border border-gray-300 rounded shadow-lg flex flex-col justify-center items-center bg-white p-2">
+              <div class="trendingproduct2img">
+                <img src="images/speaker.png" alt="" />
+              </div>
+              <div class="trendingproduct2info flex flex-col">
+                <span>Speaker</span>
+                <a href="">Big Power Sound Speaker</a>
+                <span>$275.00</span>
+              </div>
+            </div>
+            <div
+              class="trending-product3 border border-gray-300 rounded shadow-lg flex flex-col justify-center items-center bg-white p-2">
+              <div class="trendingproduct3img">
+                <img src="images/webcam.png" alt="" />
+              </div>
+              <div class="trendingproduct3info flex flex-col">
+                <span>Camera</span>
+                <a href="">Wifi Security Camera</a>
+                <span>$399.00</span>
+              </div>
+            </div>
+            <div
+              class="trending-product4 border border-gray-300 rounded shadow-lg flex flex-col justify-center items-center bg-white p-2">
+              <div class="trendingproduct4img">
+                <img src="images/phone.png" alt="" />
+              </div>
+              <div class="trendingproduct4info flex flex-col">
+                <span>Phones</span>
+                <a href="">iPhone 6s</a>
+                <span>$399.00</span>
+              </div>
+            </div>
+            <div
+              class="trending-product5 border border-gray-300 rounded shadow-lg flex flex-col justify-center items-center bg-white p-2">
+              <div class="trendingproduct5img">
+                <img src="images/headphones.png" alt="" />
+              </div>
+              <div class="trendingproduct5info flex flex-col">
+                <span>Headphones</span>
+                <a href="">Wireless Headphones</a>
+                <span>$350.00</span>
+              </div>
+            </div>
+            <div
+              class="trending-product6 border border-gray-300 rounded shadow-lg flex flex-col justify-center items-center bg-white p-2">
+              <div class="trendingproduct6img">
+                <img src="images/mini-speaker.png" alt="" />
+              </div>
+              <div class="trendingproduct6info flex flex-col">
+                <span>Speaker</span>
+                <a href="">Mini Bluetooth Speaker</a>
+                <span>$70.00</span>
+              </div>
+            </div>
+            <div
+              class="trending-product7 border border-gray-300 rounded shadow-lg flex flex-col justify-center items-center bg-white p-2">
+              <div class="trendingproduct7img">
+                <img src="images/PX7-headphones.png" alt="" />
+              </div>
+              <div class="trendingproduct7info flex flex-col">
+                <span>Headphones</span>
+                <a href="">PX7 Wireless Headphones</a>
+                <span>$100.00</span>
+              </div>
+            </div>
+            <div
+              class="trending-product8 border border-gray-300 rounded shadow-lg flex flex-col justify-center items-center bg-white p-2">
+              <div class="trendingproduct8img">
+                <img src="images/macbook.png" alt="" />
+              </div>
+              <div class="trendingproduct8info flex flex-col">
+                <span>Laptop</span>
+                <a href="">Apple Macbook Air</a>
+                <span>$999.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="banner-section w-full h-[30rem] flex justify-center gap-3 pt-20 pb-20">
+        <div class="container w-[90%] flex">
+          <div
+            class="banner-img1 w-1/2 h-full items-center flex justify-center bg-blue-400 bg-[url('images/banner1.png')] pt-20 pr-10 pb-20 pl-10">
+            <div
+              class="banner1-details flex justify-center flex-col gap-5 h-80">
+              <h2>Smart Watch 2.0</h2>
+              <p>
+                Lorem ipsum, dolor sit amet
+                <br />
+                consectetur adipisicing elit. Et, vel?
+              </p>
+              <button class="bg-blue-500 rounded w-36 h-12 text-white">
+                View Details
+              </button>
+            </div>
+          </div>
+          <div
+            class="banner-img2 w-1/2 h-full bg-orange-700 bg-[url('images/banner2.png')] items-center flex justify-center">
+            <div
+              class="banner2-details flex justify-center flex-col gap-5 h-80">
+              <h2>Smart Headphones</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur
+                <br />
+                adipisicing elit. Et, vel?
+              </p>
+              <button class="bg-blue-500 rounded w-36 h-12 text-white">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer flex justify-center">
+        <div class="container w-[90%]">
+          <div
+            class="footer-logo w-full h-20 flex justify-center items-center border-b border-gray-600">
+            <img src="/images/2.1.png" alt="" />
+          </div>
+          <div class="footer-sections flex flex-row pt-20">
+            <div class="footer-aboutus w-1/4 h-40 flex flex-col gap-5">
+              <h3 class="font-semibold">About Us</h3>
+              <p class="pr-20">
+                We know there are lot of threa developers our but we pride into
+                a firm in the industry.
+              </p>
+            </div>
+            <div class="footer-features w-1/4 h-40 flex flex-col gap-5">
+              <h3 class="font-semibold">Features</h3>
+              <a href="">About Us</a>
+              <a href="">Terms Condition</a>
+              <a href="">Best Products</a>
+            </div>
+            <div class="footer-links w-1/4 h-40 flex flex-col gap-5">
+              <h3 class="font-semibold">General Links</h3>
+              <a href="">Blog</a>
+              <a href="">Tracking Order</a>
+              <a href="">Become Seller</a>
+            </div>
+            <div class="footer-helpful w-1/4 h-40 flex flex-col gap-5">
+              <h3 class="font-semibold">Helpful</h3>
+              <a href="">Flash Sale</a>
+              <a href="">FAQ</a>
+              <a href="">Support</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
