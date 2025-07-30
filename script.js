@@ -18,6 +18,7 @@ loginForm.addEventListener("submit", function (e) {
   ) {
     messagePara.textContent = `🎉 Welcome, ${enteredUsername}!`;
     messagePara.style.color = "green";
+    window.location.href = "home.html";
   } else {
     messagePara.textContent = "❌ Invalid username or password.";
     messagePara.style.color = "red";
