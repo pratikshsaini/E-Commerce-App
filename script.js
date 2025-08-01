@@ -18,78 +18,14 @@ loginForm.addEventListener("submit", function (e) {
   ) {
     messagePara.textContent = `🎉 Welcome, ${enteredUsername}!`;
     messagePara.style.color = "green";
-    window.location.href = "home.html";
+    setTimeout(() => {
+      window.location.href = "home.html";
+    }, 1000);
   } else {
     messagePara.textContent = "❌ Invalid username or password.";
     messagePara.style.color = "red";
   }
 });
-
-const product = [
-  {
-    id: 1,
-    title: "Xiaomi Mi Band 5",
-    category: "Watches",
-    price: 1999.0,
-    image: "images/watch.png",
-  },
-  {
-    id: 2,
-    title: "Big Power Sound Speaker",
-    category: "Speaker",
-    price: 2750.0,
-    image: "images/speaker.png",
-  },
-  {
-    id: 3,
-    title: "Wifi Security Camera",
-    category: "Camera",
-    price: 2999.0,
-    image: "images/webcam.png",
-  },
-  {
-    id: 4,
-    title: "iPhone 6s",
-    category: "Phones",
-    price: 39999.0,
-    image: "images/phone.png",
-  },
-  {
-    id: 5,
-    title: "Wireless Headphones",
-    category: "Headphones",
-    price: 3499.0,
-    image: "images/headphones.png",
-  },
-  {
-    id: 6,
-    title: "Mini Bluetooth Speaker",
-    category: "Speaker",
-    price: 799.0,
-    image: "images/mini-speaker.png",
-  },
-  {
-    id: 7,
-    title: "PX7 Wireless Headphones",
-    category: "Headphones",
-    price: 1999.0,
-    image: "images/PX7-headphones.png",
-  },
-  {
-    id: 8,
-    title: "Apple Macbook Air",
-    category: "Laptop",
-    price: 79999.0,
-    image: "images/macbook.png",
-  },
-  {
-    id: 9,
-    title: "Apple Macbook Air",
-    category: "Laptop",
-    price: 79999.0,
-    image: "images/macbook.png",
-  },
-];
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
