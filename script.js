@@ -9,13 +9,12 @@ const loginForm = document.getElementById("login-form");
 const messagePara = document.getElementById("login-message");
 
 if (loginForm) {
-  
   loginForm.addEventListener("submit", function (e) {
     e.preventDefault();
-  
+
     const enteredUsername = document.getElementById("username").value.trim();
     const enteredPassword = document.getElementById("password").value.trim();
-  
+
     if (
       enteredUsername === dummyUser.username &&
       enteredPassword === dummyUser.password
@@ -130,21 +129,19 @@ function loadProduct(productlist) {
 }
 
 if (productLoader) {
-  
   loadProduct(product);
 }
 
-
 document.querySelectorAll(".addCart").forEach((btn) => {
-    btn.addEventListener("click", function handleAddCart(e) {
-      const productId = parseInt(e.target.dataset.id);
-      const selectedProduct = product.find((p) => p.id === productId);
+  btn.addEventListener("click", function handleAddCart(e) {
+    const productId = parseInt(e.target.dataset.id);
+    const selectedProduct = product.find((p) => p.id === productId);
 
-      cart.push(selectedProduct);
-      localStorage.setItem("cart", JSON.stringify(cart));
-      alert(`${selectedProduct.title} added to cart!`);
-    });
+    cart.push(selectedProduct);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(`${selectedProduct.title} added to cart!`);
   });
+});
 
 // Cart................................................................................
 
@@ -178,5 +175,16 @@ function displayCartItem() {
 }
 
 if (cartContainer) {
-displayCartItem();
+  displayCartItem();
 }
+
+// cart count.........................................................................
+
+let count = 0;
+const cartCount = document.getElementById("cart-count");
+const cartElement = document.querySelectorAll(".addCart");
+
+cartElement.addEventListener("click", () => {
+  count++;
+  cartCount.textContent = count;
+});
