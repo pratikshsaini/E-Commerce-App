@@ -184,7 +184,9 @@ let count = 0;
 const cartCount = document.getElementById("cart-count");
 const cartElement = document.querySelectorAll(".addCart");
 
-cartElement.addEventListener("click", () => {
-  count++;
-  cartCount.textContent = count;
+cartElement.forEach((button) => {
+  button.addEventListener("click", () => {
+    count++;
+    cartCount.textContent = count;
+  });
 });
